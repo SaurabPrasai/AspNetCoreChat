@@ -1,0 +1,32 @@
+# Build folders
+.idea
+**/bin/
+**/obj/
+**/publish/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# IDE folders
+.vscode/
+.vs/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment
+*.env
+appsettings.Development.json
+secrets.json
+
+# Package caches
+*.nupkg
+*.snupkg
+packages/
