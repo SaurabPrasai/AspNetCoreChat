@@ -1,7 +1,7 @@
 @{
     Layout = "_AuthLayout";
 }
-@model ChatApp.Web.ViewModel.LoginViewModel;
+@model ChatApp.Web.ViewModel.RegisterViewModel;
 
 <style>
     .chat-gradient {
@@ -148,6 +148,11 @@
                 @Html.AntiForgeryToken()
 
                 <div class="mb-4">
+                    <label asp-for="Fullname" class="form-label">Fullname</label>
+                    <input asp-for="Fullname" class="form-control" placeholder="Enter your fullname" />
+                    <span asp-validation-for="Fullname" class="text-danger small"></span>
+                </div>
+                <div class="mb-4">
                     <label asp-for="Email" class="form-label">Email Address</label>
                     <input asp-for="Email" class="form-control" placeholder="Enter your email" />
                     <span asp-validation-for="Email" class="text-danger small"></span>
@@ -161,12 +166,12 @@
 
                 <div class="d-grid mb-4">
                     <button type="submit" class="btn btn-primary btn-login">
-                        Sign In
+                        Register
                     </button>
                 </div>
 
                 <div class="text-center">
-                    Don't have an account? <a href="/auth/register" class="text-decoration-none">Sign Up</a>
+                    Already have an account? <a href="/" class="text-decoration-none">Sign In</a>
                 </div>
             </form>
         </div>
