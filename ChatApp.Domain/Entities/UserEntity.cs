@@ -16,6 +16,9 @@ public class UserEntity
     
     public string ProfileImage { get; set; }
     
+    public ICollection<MessageEntity> MessageSent { get; set; }
+    public ICollection<MessageEntity> MessageReceived { get; set; }
+    
     public DateTime CreatedAt { get; set; }
     
     public DateTime UpdatedAt { get; set; }
